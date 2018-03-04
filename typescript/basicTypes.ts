@@ -13,6 +13,6 @@ color = 'red';
 
 let fullname: string = 'Bob Bobbington';
 let age: number = 37;
-let sentence: string = "Hello, my name is ${ fullname }.\
-I'll be ${age+1} years old next month\
-";
+let sentence: string = "Hello, my name is ${ fullname }. I'll be ${age+1} years old next month";
+
+//This is equivalent to declaring sentence like so:
