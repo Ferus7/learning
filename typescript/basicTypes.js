@@ -13,3 +13,5 @@ var age = 37;
 var sentence = "Hello, my name is ${ fullname }. I'll be ${age+1} years old next month";
 //This is equivalent to declaring sentence like so:
 var sentence1 = "Hello, my name is + fullname." + "I'll be" + "age+1" + "years old next month";
+//Array
+var list = [1, 2, 3];
