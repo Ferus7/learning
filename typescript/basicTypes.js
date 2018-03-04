@@ -15,3 +15,9 @@ var sentence = "Hello, my name is ${ fullname }. I'll be ${age+1} years old next
 var sentence1 = "Hello, my name is + fullname." + "I'll be" + "age+1" + "years old next month";
 //Array
 var list = [1, 2, 3];
+//Generic array type, Array<elemType>
+var list1 = [1, 2, 3];
+//Tuple
+var x;
+x = ["Hello", 10];
+console.log(x[0].substr(1));

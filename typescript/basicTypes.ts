@@ -21,3 +21,11 @@ let sentence1: string = "Hello, my name is + fullname." + "I'll be" + "age+1" + 
 
 //Array
 let list: number[] = [1,2,3];
+
+//Generic array type, Array<elemType>
+let list1: Array<number> = [1, 2, 3];
+
+//Tuple
+let x: [string, number];
+x = ["Hello", 10];
+console.log(x[0].substr(1));
