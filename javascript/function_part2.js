@@ -24,7 +24,7 @@
  * é com o uso emcapsulamento por meio de objetos;
  * No entanto, este tipo de solução gera um problema, pois
  * Javascript não tem modificadores de visibilidade (public, private),
- * portanto, corre um sério risco de acessarmos um valor
+ * portanto, corre um sério risco de acessármos um valor
  * interno ao objeto.
 */
 
@@ -64,18 +64,18 @@
  */
 
 /* por meio de Factory Function */
-// var createCounter = function() {
-// 	var value = 0;
-// 	return {
-// 		add: function() {
-// 			// Isso só é possível por meio das closures
-// 			return ++value;
-// 		}
-// 	};
-// };
+var createCounter = function() {
+	var value = 0;
+	return {
+		add: function() {
+			// Isso só é possível por meio das closures
+			return ++value;
+		}
+	};
+};
 
-// var counter = createCounter();
-// console.log(counter.add());
+var counter = createCounter();
+console.log(counter.add());
 
 /* Por meio de Constructor Function */
 // var Create = function() {
@@ -109,27 +109,27 @@
 
 /* OBS.: Podemos adicionar o undercore prefixando tudo que for privado */
 
-var counter = (function() {
-	var _value = 0;
+// var counter = (function() {
+// 	var _value = 0;
 
-	_add = function() {
-		return ++_value;
-	};
+// 	_add = function() {
+// 		return ++_value;
+// 	};
 
-	_reset = function() {
-		_value = 0;
-	}
+// 	_reset = function() {
+// 		_value = 0;
+// 	}
 
-	return {
-		add: _add,
-		reset: _reset
-	};
-})();
+// 	return {
+// 		add: _add,
+// 		reset: _reset
+// 	};
+// })();
 
-console.log(counter.add());
-console.log(counter.add());
-console.log(counter.add());
-counter.reset()
-console.log(counter.add());
+// console.log(counter.add());
+// console.log(counter.add());
+// console.log(counter.add());
+// counter.reset()
+// console.log(counter.add());
 
 
