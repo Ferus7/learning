@@ -18,4 +18,5 @@ function makeFunc() {
 
 var myFunc = makeFunc();
 
-console.log(myFunc());
+
+
