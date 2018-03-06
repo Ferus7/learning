@@ -28,4 +28,9 @@ let list1: Array<number> = [1, 2, 3];
 //Tuple
 let x: [string, number];
 x = ["Hello", 10];
-console.log(x[0].substr(1));
+// console.log(x[0].substr(1));
+
+/* Enum */
+enum Color {Red, Green, Blue}
+let c: Color = Color.Green;
+console.log(c);
