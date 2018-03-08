@@ -24,9 +24,9 @@ class Developer
 
 end
 
-#puts Developer.class
-#puts Class.superclass
-#puts Module.superclass
-#puts Object.superclass
-puts Developer.new.instMethod
+puts Developer.backend
+puts Developer.new.frontend
+
 puts Developer.classMethod
+puts Developer.new.instMethod
+puts Developer.new.instMethod.frontend
