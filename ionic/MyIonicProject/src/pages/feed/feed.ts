@@ -19,7 +19,7 @@ export class FeedPage {
   }
 
   public somaDoisNumeros(numb1:number, numb2:number):void {
-  	alert(numb1 + numb2);
+  	// alert(numb1 + numb2);
   }
 
   ionViewDidLoad() {
