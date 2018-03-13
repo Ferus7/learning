@@ -1,10 +1,11 @@
 class Carro
-	
-	#Não há só o attr_accessor, mas também o attr_writer e attr_reader
-	attr_accessor :nome, :pneu, :porta, :painel, :roda
+	attr_writer :name
+	attr_reader :yuri
+	attr_accessor :code
+
 end
 
-ferrari = Carro.new
-ferrari.nome = 'Ferrari'
-puts ferrari.nome
+a = Carro.new
+a.name = 'Yuri'
+
 
