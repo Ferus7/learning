@@ -7,6 +7,8 @@ module RecipeHelper
 		end
 	end
 
+	# Este método não é apresentao no curso de Rails
+	# Foi apenas um teste
 	def precinho(recipe)
 		if recipe.barato?
 			content_tag(:strong, "No precinho meu patrão! É muito gostoso! Ôôooohh");
