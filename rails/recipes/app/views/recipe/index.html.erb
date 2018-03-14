@@ -1,0 +1,12 @@
+<h3><%= pluralize(@recipes.size, "Receita", "Receitas") %></h3>
+<section>
+	<% @recipes.each do |recipe|%>
+		<h3><%= recipe.name %></h3>
+		<ul>
+			<li><%= recipe.stuff %></li>
+			<li><%= formata_caloria(recipe) %></li>
+			<li><%= recipe.prepare_mode %></li>
+			<li><%= precinho(recipe) %></li>
+		</ul>
+	<% end %>
+</section>
