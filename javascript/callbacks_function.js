@@ -12,26 +12,27 @@
 
 // console.log(invoke_and_add(one, two));
 
-// function multiplyByTwo(a, b, c, callback) {
+/* ==PART 2== */
+// function multiplyByTwo(a, b, c) {
 // 	var i, ar = [];
+// 	/* First loop */
 // 	for(i = 0; i < 3; i++) {
 // 		ar[i] = arguments[i] * 2;
 // 	}
 // 	return ar;
 // }
 
+/* This function is going to used as callback function in multiplyByTwo */
 function addOne(a) {
 	return a+1;
 }
 
-// console.log(multiplyByTwo(1, 2, 3));
-// console.log(addOne(100));
-
 // var myarr = [];
-// myarr = multiplyByTwo(10, 20, 30);
+// myarr = multiplyByTwo(10, 20, 30); // 20 40 60
 
+// /* Second loop */
 // for(var i = 0; i < 3; i++) {
-// 	myarr[i] = addOne(myarr[i]);
+// 	myarr[i] = addOne(myarr[i]); // 21 41 61
 // }
 
 // console.log(myarr);
