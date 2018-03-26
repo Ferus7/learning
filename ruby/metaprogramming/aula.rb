@@ -1,14 +1,16 @@
-require 'byebug'
+#require 'byebug'
 
-# def String.mostrar_nova_string2
-# 	"Nova String2"
+# def String.mostrar_nova_string
+# 	"Nova String"
 # end
 
-# a = "Danilo"
+# a = "Yuri"
 
-# def a.mostrar_nova_string
-# 	"Nova String de a"
+# def a.mostrar_nova_string2
+# 	"Nova String2 adicionado à a"
 # end
+
+# puts a.mostrar_nova_string
 
 class Carro
 	def initialize(marca="Wolkswagem")
@@ -32,7 +34,7 @@ def Carro.mostrarMetodo2
 	"Este método é de classe, porém fora da classe Carro"
 end
 
-debugger
+# debugger
 
 fiesta = Carro.new
 
@@ -46,4 +48,8 @@ def golf.mostrar
 	"Olá, sou o método de Golf"
 end
 
-x = ""
+bugatti = Carro.new
+
+puts fiesta.mostrar
+puts golf.mostrar
+puts bugatti.mostrar
