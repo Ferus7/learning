@@ -1,4 +1,4 @@
-require 'byebug'
+# require 'byebug'
 
 # << | Herança por comportamento
 
@@ -8,12 +8,12 @@ require 'byebug'
 # 	"teste danilo"
 # end
 
-# danilo.olha
+# puts danilo.olha
 
 # a = danilo.clone
-# a.olha
+# puts a.olha
 
-# debugger
+# # debugger
 
 # b = danilo.dup
 # b.olha
