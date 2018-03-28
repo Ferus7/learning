@@ -1,4 +1,4 @@
-#require 'byebug'
+require 'byebug'
 
 # def String.mostrar_nova_string
 # 	"Nova String"
@@ -34,7 +34,7 @@ def Carro.mostrarMetodo2
 	"Este método é de classe, porém fora da classe Carro"
 end
 
-# debugger
+debugger
 
 fiesta = Carro.new
 
