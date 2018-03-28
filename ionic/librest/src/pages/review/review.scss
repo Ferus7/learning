@@ -3,4 +3,22 @@ page-review {
 		margin-right: 0px;
 		margin-bottom: 0px;
 	}
+	ion-icon.col-star {
+		color: #F5BB26;
+		font-size: 2em;
+	}
+	ion-icon.uncol-star {
+		color: #708185;
+		font-size: 2em;
+	}
+	ion-row.col-center {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+	}
+	ion-content.col-top-bottom {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
 }
