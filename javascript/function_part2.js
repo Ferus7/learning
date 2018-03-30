@@ -31,26 +31,31 @@
  *
  * Por causa disso, na linha 19 ocorrerá algo inesperado, pois ele vai tentar
  * colocar o nada, pois não há parâmetro, em itens, portanto, será adicionado undefined.
- *
+ */
+
+/*=====================================================================================*/
+
+/* Outra tentattiva que falhará */
+
+/*
  * Uma das formas para resolvemos este tipo de problema
- * é com o uso do emcapsulamento por meio de objetos;
+ * é com o uso do emcapsulamento por meio de objetos.
  * No entanto, este tipo de solução gera um problema, pois
  * Javascript não tem modificadores de visibilidade (public, private),
  * portanto, corre um sério risco de acessármos um valor
  * interno ao objeto.
 */
 
-var counter = {
-	value: 0,
-	add: function() {
-		return ++this.value;
-	}
-};
+// var counter = {
+// 	value: 0,
+// 	add: function() {
+// 		return ++this.value;
+// 	}
+// };
 
-console.log(counter.add());
-console.log(counter.add());
-// counter.value = undefined;
-console.log(counter.add());
+// console.log(counter.add());
+// console.log(counter.add());
+// console.log(counter.add());
 
 /* Temos aqui um NaN, pois ele está somando ++undefined, e isso
  * não existe. Então temos um sério problema de podermos 
@@ -69,6 +74,8 @@ console.log(counter.add());
 // 	}
 // };
 
+/*=====================================================================================*/
+
 /* Uma segunda maneira que, por sua vez, é mais viável;
  * Seria o uso de funções, já que elas têm seu bloco isolado
  * e também é um objeto que executa códigos.
@@ -76,12 +83,12 @@ console.log(counter.add());
  * mas também constructor function.
  */
 
-/* por meio de Factory Function */
+/* Por meio de Factory Function */
 // var createCounter = function() {
 // 	var value = 0;
 // 	return {
 // 		add: function() {
-// 			// Isso só é possível por meio das closures
+// 			// Isso só é possível por meio das clojures
 // 			return ++value;
 // 		}
 // 	};
@@ -100,6 +107,8 @@ console.log(counter.add());
 
 // var counter = new Create();
 // console.log(counter.add());
+
+/*=====================================================================================*/
 
 /* Temos um padrão legal para se usar
  * Immediately-Invoked Function Expression - IIFE
