@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { MenuController } from 'ionic-angular';
 
 /**
  * Generated class for the MenuPage page.
@@ -8,18 +8,31 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
+//@IonicPage()
 @Component({
   selector: 'page-menu',
   templateUrl: 'menu.html',
 })
 export class MenuPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public menuCtrl: MenuController) {
+
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad MenuPage');
+  openMenu() {
+  	this.menuCtrl.open();
   }
+
+  closeMenu() {
+  	this.menuCtrl.close();
+  }
+
+  toggleMenu() {
+  	this.menuCtrl.toggle();
+  }
+
+  // ionViewDidLoad() {
+  //   console.log('ionViewDidLoad MenuPage');
+  // }
 
 }
