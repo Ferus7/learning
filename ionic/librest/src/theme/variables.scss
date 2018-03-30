@@ -39,7 +39,8 @@ $colors: (
   danger:     #f53d3d,
   light:      #f4f4f4,
   dark:       #222,
-  tab-col:    #004D40
+  tab-col:    #004D40,
+  cinza-inp:  #9B9B9B,
 );
 
 // App iOS Variables
@@ -60,9 +61,9 @@ $badge-md-background-color: color($colors, tab-col);
 $tabs-md-tab-icon-size: 10rem;
 $tabs-md-tab-color-active: #F5BB26;
 $tabs-md-tab-icon-color-active: yellow;
-$searchbar-md-input-box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0),
-                                0 0px 0px 0px rgba(0, 0, 0, 0),
-                                0 0px 0px 0 rgba(0, 0, 0, 0);
+
+$text-input-md-highlight-color: color($colors, cinza-inp);
+$text-input-highlight-color-valid: #9B9B9B;
 
 // App Windows Variables
 // --------------------------------------------------
