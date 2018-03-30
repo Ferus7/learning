@@ -11,6 +11,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { DetailsPageModule } from '../pages/details/details.module';
 import { ReviewPageModule } from '../pages/review/review.module';
 import { ReadingPageModule } from '../pages/reading/reading.module';
+import { MenuPageModule } from '../pages/menu/menu.module';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -28,7 +29,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     IonicModule.forRoot(MyApp),
     DetailsPageModule,
     ReviewPageModule,
-    ReadingPageModule
+    ReadingPageModule,
+    MenuPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
