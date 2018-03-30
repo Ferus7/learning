@@ -1,4 +1,4 @@
-// Function Declaration - It's loaded before interpretation */
+/* Function Declaration - It's loaded before interpretation */
 
 // console.log(sum(1, 2));//3
 
@@ -70,9 +70,9 @@ console.log(soma(1, 2));
 // 	}
 // };
 
-// console.log(getAge());//undefined
-// console.log(person.getAge());//20
-// console.log(person.getName());//20
+// console.log(getAge());          // undefined
+// console.log(person.getAge());   // 20
+// console.log(person.getName());  // 20
 
 // Call and Apply functions
 /*
