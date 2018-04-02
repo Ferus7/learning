@@ -31,15 +31,35 @@
 // n = f();
 
 // Closure #2
-var n;
-function f() {
-	var b = "b";
-	n = function() {
-		return b;
-	};
-}
+// var n;
+// function f() {
+// 	var b = "b";
+// 	n = function() {
+// 		return b;
+// 	};
+// }
 
 // Necessita que f() seja iniciada
-console.log(f());
-console.log(n());
+// console.log(f());
+// console.log(n());
 
+
+/* 
+ *   Returning the argument 
+ * 
+ * Here 
+ * 
+ * 
+*/
+
+function f(arg) {
+	var n = function() {
+		return arg;
+	}
+	arg++;
+	return n;
+}
+
+var a = f(10);
+
+console.log(a());
