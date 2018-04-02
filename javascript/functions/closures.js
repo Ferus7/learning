@@ -43,23 +43,37 @@
 // console.log(f());
 // console.log(n());
 
-
 /* 
  *   Returning the argument 
  * 
- * Here 
- * 
+ * The argument returned by n-function, realize that it
+ * has been incremented after function has been defined.
+ * It's as if the function were defined before the return
+ * keywork and all operation happened before of defination
+ * of the n-function.
+ *
+ *   Example
+ *
+ *  function f(arg) {
+ *    arg++;	  
+ *
+ *    var n = function() {
+ *		return arg;
+ *	  }  
+ *	  return n;
+ *  }
  * 
 */
 
-function f(arg) {
-	var n = function() {
-		return arg;
-	}
-	arg++;
-	return n;
-}
+// function f(arg) {
+// 	var n = function() {
+// 		return arg;
+// 	}
+// 	arg++;
+// 	return n;
+// }
 
-var a = f(10);
+// var a = f(10);
 
-console.log(a());
+// console.log(a());
+
