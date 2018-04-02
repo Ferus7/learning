@@ -77,3 +77,44 @@
 
 // console.log(a());
 
+/*
+ *   Closures in a Loop
+ * The result of functions bellow will be 3.
+ * Because the three functions created are point to
+ * the same place, that is i variable.
+ * OBS.: Closures only link (reference) the variabel, 
+ * It doesn't remember the variable's value!
+ *
+*/
+
+// function f() {
+// 	var a = [];
+// 	var i;
+// 	for(i = 0; i < 3; i++) {
+// 		a[i] = function() {
+// 			return i;
+// 		}
+// 	}
+// 	return a;
+// }
+
+// var a = f();
+
+// console.log(a[0]());
+// console.log(a[1]());
+// console.log(a[2]());
+
+/* Solution */
+
+function f() {
+	var a = [];
+	var i;
+	for(i = 0; i < 3; i++) {
+		a[i] = (function(x){
+			return function(){
+				return x;
+			}
+		})(i);
+	}
+	return a;
+}
