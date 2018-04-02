@@ -18,16 +18,28 @@
 
 // var myFunc = makeFunc();
 
-/* Lexical Scope */
+/* Breaking the Chain witha Closure */
+// This is Global Space
 
-function f1() {
-	var a = 1;
-	f2();
+// Closure #1
+// function f() {
+// 	var b = "Yuri";
+// 	return function() {
+// 		return b;
+// 	}
+// }
+// n = f();
+
+// Closure #2
+var n;
+function f() {
+	var b = "b";
+	n = function() {
+		return b;
+	};
 }
 
-function f2() {
-	return a;
-}
-
-f1();
+// Necessita que f() seja incada
+console.log(f());
+console.log(n());
 
