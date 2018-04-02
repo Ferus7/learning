@@ -39,7 +39,7 @@ function f() {
 	};
 }
 
-// Necessita que f() seja incada
+// Necessita que f() seja iniciada
 console.log(f());
 console.log(n());
 
