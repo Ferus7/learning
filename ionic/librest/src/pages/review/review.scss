@@ -1,9 +1,9 @@
 page-review {
 
-	ion-card p {
-		margin-right: 0px;
-		margin-bottom: 0px;
-	}
+	// ion-card p {
+	// 	margin-right: 0px;
+	// 	margin-bottom: 0px;
+	// }
 	ion-icon.col-star {
 		color: #F5BB26;
 		width: 30px;
@@ -32,29 +32,33 @@ page-review {
 	div.divisor {
 		width: 100%;
 		height: 1px;
-		background-color: rgba(0,0,0,0.5);
+		background-color: rgba(151, 151, 151, 1);
 	}
 	div.info-card {
 		width: 345px;
 		height: 54px;
-		background-color: rgba(247, 247, 247, 0.96);
+		background-color: rgba(255, 255, 255, 0.96);
 		color: rgba(0, 0, 0, 0.96);
 		border-radius: 8px;
 		padding-left: 16px;
 		padding-top: 13px;
-		padding-bottom: 25px;
-		padding-right: 16px;
 		font-size: 14px;
 		margin-bottom: 27px;
-	}
-	p.time {
-		color: rgba(0, 0, 0, 0.54);
-		font-size: 9px;
-		padding-right: 12px;
 	}
 	div.side-right {
 		display: flex;
 		flex-direction: row;
 		justify-content: flex-end;
+		padding: 0px;
 	}
+	p.time {
+		color: rgba(0, 0, 0, 0.54);
+		font-size: 9px;
+		padding-right: 12px;
+		padding-bottom: 5px;
+	}
+	ion-footer ion-toolbar, ion-input,ion-buttons {
+		background-color: rgb(255, 255, 255);
+	}
+	
 }

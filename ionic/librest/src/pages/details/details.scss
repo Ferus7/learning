@@ -7,4 +7,9 @@ page-details {
 	ion-card-header {
 		font-size: 14px;
 	}
+	div.divisor {
+		width: 100%;
+		height: 1px;
+		background-color: rgba(151, 151, 151, 1);
+	}
 }
