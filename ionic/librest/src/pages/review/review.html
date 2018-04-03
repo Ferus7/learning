@@ -1,9 +1,3 @@
-<!--
-  Generated template for the ReviewPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
   <ion-navbar color="tab-col">
     <ion-title>Review</ion-title>
@@ -13,18 +7,30 @@
 <ion-content padding class="col-top-bottom">
 	<ion-grid>
 		<ion-row class="col-center">
-			<ion-col col-6>
-				<ion-icon md="md-star" class="col-star"></ion-icon>
-				<ion-icon md="md-star" class="col-star"></ion-icon>
-				<ion-icon md="md-star" class="col-star"></ion-icon>
-				<ion-icon md="md-star" class="col-star"></ion-icon>
-				<ion-icon md="md-star" class="uncol-star"></ion-icon>
-			</ion-col>
-		</ion-row>
+      <ion-col col-2></ion-col>
+      <ion-col col-8>
+        <ion-icon md="md-star" class="col-star"></ion-icon>
+        <ion-icon md="md-star" class="col-star"></ion-icon>
+        <ion-icon md="md-star" class="col-star"></ion-icon>
+        <ion-icon md="md-star" class="col-star"></ion-icon>
+        <ion-icon md="md-star" class="uncol-star"></ion-icon>
+      </ion-col>
+      <ion-col col-2></ion-col>
+    </ion-row>
+    <div class="divisor"></div>
 	</ion-grid>
+
+
 </ion-content>
 
 <ion-footer>
+  <div class="info-card">
+    <strong>Awesome book, I never will get tied reading that</strong>
+    <div class="side-right">
+      <p class="time">Jan 6 12:30pm</p>
+    </div>
+  </div>
+  
   <ion-toolbar>
     <ion-input type="text" value="" placeholder="Add a comment about the book"></ion-input>
     <ion-buttons end>
@@ -35,3 +41,4 @@
 
   </ion-toolbar>
 </ion-footer>
+
